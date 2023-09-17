@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_player_app/components/size_config.dart';
+import 'package:XSpotify/components/size_config.dart';
 
 class MusicItem extends StatelessWidget {
   @override

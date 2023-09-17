@@ -1,4 +1,5 @@
-name: music_player_app
+name: XSpotify
+
 description: A spotify clone.
 
 # The following line prevents the package from being accidentally published to
@@ -18,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.11.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -28,13 +29,28 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_svg: ^0.19.0
-  provider: ^4.0.0
-  audioplayers: ^0.14.2
+  flutter_svg: ^2.0.1
+  provider: ^6.0.5
+  delayed_display: ^2.0.0
+  just_audio: ^0.9.32
+  just_audio_background: ^0.0.1-beta.7
+  rxdart: ^0.27.7
+  marquee_widget: ^1.2.0
+  marquee: ^2.2.3
+  animated_text_kit: ^4.2.2
+  path_provider: ^2.0.14
+  http: ^0.13.6
+  audio_video_progress_bar: ^1.0.1
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/logo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -82,6 +98,12 @@ flutter:
         - asset: assets/fonts/muli/Muli.ttf
         - asset: assets/fonts/muli/Muli-Bold.ttf
         - asset: assets/fonts/muli/Muli-Light.ttf
+    
+    - family: Circular
+      fonts:
+        - asset: assets/fonts/Circular/Gilroy-Regular.ttf
+        - asset: assets/fonts/Circular/ProductSans-Regular.ttf
+    
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

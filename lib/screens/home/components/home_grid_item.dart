@@ -1,10 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:XSpotify/components/size_config.dart';
+//import 'package:palette_generator/palette_generator.dart';
 
-class HomeGridItem extends StatelessWidget {
+class HomeGridItem extends StatefulWidget {
   final String albumName;
   final String albumImage;
+  //late PaletteColor couleurBackground;
 
-  HomeGridItem({this.albumImage, this.albumName});
+  HomeGridItem({required this.albumImage, required this.albumName});
+
+  @override
+  State<HomeGridItem> createState() => _HomeGridItemState();
+}
+
+class _HomeGridItemState extends State<HomeGridItem> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,13 +27,15 @@ class HomeGridItem extends StatelessWidget {
           color: Colors.grey[850], borderRadius: BorderRadius.circular(3)),
       child: Row(
         children: [
-          Container(
-            width: 60,
-            child: Image.asset(
-              albumImage,
-              fit: BoxFit.contain,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(3),
+            child: Container(
+              width: SizeConfiguration.defaultSize * 0.7,
+              child: Image.network(
+                widget.albumImage,
+                fit: BoxFit.cover,
+              ),
             ),
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(3)),
           ),
           Container(
             child: Row(
@@ -26,7 +43,6 @@ class HomeGridItem extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(5),
                   child: Container(
-                    width: 80,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,15 +52,15 @@ class HomeGridItem extends StatelessWidget {
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
-                              fontSize: 14),
+                              fontSize: SizeConfiguration.defaultSize * 0.12),
                         ),
                         Text(
-                          albumName,
+                          widget.albumName,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.w400,
-                              fontSize: 14),
+                              fontSize: SizeConfiguration.defaultSize * 0.09),
                         )
                       ],
                     ),
