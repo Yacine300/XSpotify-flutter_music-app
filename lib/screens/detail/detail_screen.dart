@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 
 import 'package:music_player_app/components/size_config.dart';
