@@ -3,6 +3,8 @@
 
 xSpotify is a beautiful and functional Flutter application clone of Spotify, designed to provide a seamless music experience. The app leverages the Provider state management solution and includes various features to enhance the user experience.
 
+<img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/cover.png" alt="XSpotify">
+
 ## Overview
 
 xSpotify allows users to play music, control music playback across the entire app, and play music in the background. The application is built using Flutter and integrates powerful audio playback libraries such as just_audio and just_audio_background.
