@@ -81,3 +81,23 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/1.png" width="250" alt="Image 1">
+    <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/2.png" width="250" alt="Image 2">
+    <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/3.png" width="250" alt="Image 3">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/4.png" width="250" alt="Image 4">
+    <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/5.png" width="250" alt="Image 5">
+    <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/6.png" width="250" alt="Image 6">
+</p>
+<p align="center">
+  <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/7.png" width="250" alt="Image 7">
+    <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/8.png" width="250" alt="Image 8">
+    <img src="https://github.com/Yacine300/XSpotify-flutter_music-app/blob/master/9.png" width="250" alt="Image 9">
+</p>
+
